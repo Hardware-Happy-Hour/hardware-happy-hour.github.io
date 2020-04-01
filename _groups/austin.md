@@ -3,7 +3,7 @@ title: "3H Austin"
 image: "/assets/images/IMG_20190611_211152-1024x768.jpg"
 group: austin
 twitter:
-site:
+site: https://www.meetup.com/Hardware-Happy-Hour-3H-Austin/
 appetizer:
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Sometimes the formality of meetups is too much. This group exists to socialize and show off your latest piece of hardware. If it's a simple Arduino based thingamabob or your company's newest hardware product (and how you earn your living), you should consider attending. The main focus is meeting like minded people who are building fun things (with atoms!)
