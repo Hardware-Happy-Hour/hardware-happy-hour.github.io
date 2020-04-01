@@ -1,0 +1,37 @@
+---
+title: "Local groups"
+layout: default
+permalink: "/groups/"
+---
+
+<div class="container">
+<h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
+    <div class="row gap-y listrecent listrecent listauthor">
+    {% for group in site.groups %}
+        <div class="col-lg-6 mb-4">
+            <div class="p-4 border rounded">
+            <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ group.title }}" src="{{ group.image }}" class="rounded-circle" height="80" width="80"></div>
+            <div class="col-md-9">
+            <a href="{{ group.url }}">
+            <h4 class="text-dark mb-0">{{ group.title }}</h4>
+            <small class="d-inline-block mt-1 mb-3 font-weight-normal">(View events)</small>
+            <div class="excerpt">{{ group.appetizer }}</div>
+            </a>
+            <div class="icon-block mt-3 d-flex justify-content-between">  
+            <div>
+            {% if group.twitter %}
+                <a target="_blank" href="https://twitter.com/{{ group.twitter }}"><i class="fab fa-twitter text-muted" aria-hidden="true"></i></a>  &nbsp;
+            {% endif %}
+            {% if group.site %}
+                <a target="_blank" href="{{ group.site }}"><i class="fa fa-globe text-muted" aria-hidden="true"></i></a> &nbsp;
+            {% endif %}
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

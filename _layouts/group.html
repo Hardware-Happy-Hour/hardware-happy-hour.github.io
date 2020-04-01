@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">        
+            <div class="row align-items-center mb-5">
+                <div class="col-md-9">
+                    <h2 class="font-weight-bold">{{page.title}}{% if page.twitter %} <span class="small btn btn-outline-success btn-sm btn-round"><a href="https://twitter.com/{{ page.twitter }}">Follow</a></span>{% endif %}</h2>
+                    {% if page.site %}<p><a href="{{ page.site }}">{{ page.title }} website</a></p>{% endif %}
+                    <p class="excerpt">{{ content }}</p>
+                </div>
+                <div class="col-md-3 text-right">
+                    <img alt="{{ page.title }}" src="{{ page.image }}" class="rounded-circle" height="150" width="150">
+                </div>
+            </div>
+            <h4 class="font-weight-bold spanborder"><span>Events by {{ page.title }}</span></h4>
+                {% assign posts = site.posts | where:"group",page.group %}
+                {% for post in posts %}
+                {% include main-loop-card.html %}
+                {% endfor %}
+        </div>
+    </div>
+</div>
