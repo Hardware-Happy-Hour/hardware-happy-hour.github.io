@@ -38,7 +38,7 @@ description: "A place for technologist and enthusiasts to discuss their latest p
         <small class="d-block text-muted">
             In <span class="catlist">
                 {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories/#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                 {% endfor %}
                 </span>                   
         </small>
@@ -74,7 +74,7 @@ description: "A place for technologist and enthusiasts to discuss their latest p
                         <small class="d-block text-muted">
                             In <span class="catlist">
                             {% for category in post.categories %}
-                            <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                            <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories/#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                             {% endfor %}
                             </span>                   
                         </small>
