@@ -1,9 +1,10 @@
 # Site
 name: 'Hardware Happy Hour'
 description: 'A place for technologist and enthusiasts to discuss their latest projects in a social atmosphere'
-logo: 'assets/images/logo.png'
+url: 'https://hardwarehappyhour.com'
+#logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
+#baseurl: ''
 #disqus:
 email: 'hello@hardwarehappyhour.com'
 #mailchimp-list: 
